@@ -1,4 +1,7 @@
 # ReliableUDPFileSender
+
+Demonstration video: https://www.youtube.com/watch?v=96lqFkAky98
+
 A UNIX file transfer program that can reliably send a file from one host to another over via UDP sockets
 
 The reliable transfer works by supplying a custom header, along with the message, in the payload of the UDP datagram. The header includes 4 unsigned integer fields: The type (TYPE) of message (DATA, ACK, FIN), the sequence number (SEQNUM) of the message, the length (LEN) (in bytes) of the message + bytes of the header, and finally a CRC32 checksum that is calculated using the TYPE, SEQNUM, LEN (for ACK, FIN messages) or TYPE, SEQNUM, LEN, and DATA (for DATA messages).
