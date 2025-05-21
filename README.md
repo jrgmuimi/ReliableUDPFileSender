@@ -10,7 +10,7 @@ The Sender sequentially sends packets to the Receiver: The Sender will NOT send 
 The Sender will timeout and exit after 5 attempts of not receiving a response (500ms * 5 = 2.5 seconds): This indicates that either the Receiver is offline, on a different port, or 5 consecutive packets were corrupt/lost. The Receiver does not have a timeout restriction and will not exit unless the user stops the program, or it has finished receiving all of the packets. Hence, it is recommended to start the Receiver first and then the Sender.
 
 Usage:  
-./MTPSender <receiver-IP> <receiver-port> <input-file> <sender-log-file (optional)>
+./MTPSender <receiver-IP> <receiver-port> <input-file> <sender-log-file (optional)>  
 ./MTPReceiver <receiver-port> <output-file> <receiver-log-file (optional)>
 
 
