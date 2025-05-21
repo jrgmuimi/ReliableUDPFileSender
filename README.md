@@ -13,4 +13,4 @@ Usage:
 ./Sender [receiver-IP] [receiver-port] [input-file] [sender-log-file (optional)]  
 ./Receiver [receiver-port] [output-file] [receiver-log-file (optional)]
 
-
+An option to specify a log file for each program is included: The log file logs the header values of all packets sent and received, as well as extra information such as the calculated checksum and current expected sequence number.
