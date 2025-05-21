@@ -244,7 +244,7 @@ int main(int argc, char* argv[])
 	}
 
 	char* response = ((i+1)>=num_packs) ? "Sender has successfully sent all packets\n" : "Sender has not sent all packets\n";
-	printf(response);
+	printf("%s", response);
 	if (isLogging) { fclose(writeFile); }
 
 	return 0;
